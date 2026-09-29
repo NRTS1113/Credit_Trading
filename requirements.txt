@@ -1,0 +1,16 @@
+# HTTP / credentials
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# Core dependencies
+pandas>=2.0.0
+pyarrow>=12.0.0
+polars>=0.19.0  # For streaming large CSV files
+duckdb>=0.9.0  # For efficient parquet querying
+psutil>=5.9.0  # For memory monitoring
+
+# Symbol reconciliation dependencies
+rapidfuzz>=3.0.0
+cleanco>=2.0
+tqdm>=4.65.0
+

@@ -1,0 +1,768 @@
+================================================================================
+DATA QUALITY ANALYSIS AND CLEANING REPORT
+Generated: 2025-10-24 02:23:13
+Data directory: /Users/yuweiyan/Quant/Projects/CreditTrading/src/data
+Total files: 15
+================================================================================
+
+
+[1/15]
+
+================================================================================
+DATA QUALITY REPORT: fmp_hist_financial_statements.parquet
+================================================================================
+
+📊 BASIC INFO:
+  Shape: 12,622 rows × 386 columns
+  Memory: 37.28 MB (estimated)
+  Duplicate rows: 0 (0.00%)
+
+❌ MISSING VALUES:
+  Overall missing rate: 5.79%
+  Columns with missing values: 382/386
+
+  Top columns by missing rate:
+    • grahamNumber                                3,751 ( 29.72%)
+    • freeCashFlowToFirm                          2,458 ( 19.47%)
+    • averageReceivables                          2,455 ( 19.45%)
+    • averagePayables                             2,455 ( 19.45%)
+    • averageInventory                            2,455 ( 19.45%)
+    • freeCashFlowToEquity                        2,445 ( 19.37%)
+    • interestDebtPerShare                        2,443 ( 19.36%)
+    • daysOfSalesOutstanding                      2,443 ( 19.36%)
+    • bookValuePerShare                           2,443 ( 19.36%)
+    • tangibleBookValuePerShare                   2,443 ( 19.36%)
+    ... and 372 more columns with missing values
+
+📝 DATA TYPES:
+  float64              342 columns
+  object                21 columns
+  datetime64[ns]        14 columns
+  datetime64[us]         8 columns
+  Int64                  1 columns
+
+📅 DATE COLUMNS:
+  date:
+    Range: 2016-04-02 00:00:00 to 2025-09-30 00:00:00
+    Span: 3,468 days
+  filingDate:
+    Range: 2016-04-28 00:00:00 to 2025-10-22 00:00:00
+    Span: 3,464 days
+  acceptedDate:
+    Range: 2016-04-28 06:03:01 to 2025-10-22 16:34:48
+    Span: 3,464 days
+  processed_at:
+    Range: 2025-10-23 00:47:42.092385 to 2025-10-23 00:54:37.131322
+    Span: 0 days
+  date_balance_sheet_statement_growth_bulk:
+    Range: 2016-04-02 00:00:00 to 2025-09-30 00:00:00
+    Span: 3,468 days
+  processed_at_balance_sheet_statement_growth_bulk:
+    Range: 2025-10-23 01:14:55.929837 to 2025-10-23 01:15:13.958410
+    Span: 0 days
+  date_cash_flow_statement_bulk:
+    Range: 2016-04-02 00:00:00 to 2025-09-30 00:00:00
+    Span: 3,468 days
+  filingDate_cash_flow_statement_bulk:
+    Range: 2016-04-28 00:00:00 to 2025-10-22 00:00:00
+    Span: 3,464 days
+  acceptedDate_cash_flow_statement_bulk:
+    Range: 2016-04-28 06:03:01 to 2025-10-22 16:34:48
+    Span: 3,464 days
+  processed_at_cash_flow_statement_bulk:
+    Range: 2025-10-23 01:52:21.915251 to 2025-10-23 01:52:37.529620
+    Span: 0 days
+  date_cash_flow_statement_growth_bulk:
+    Range: 2016-04-02 00:00:00 to 2025-09-30 00:00:00
+    Span: 3,468 days
+  processed_at_cash_flow_statement_growth_bulk:
+    Range: 2025-10-23 02:11:10.029599 to 2025-10-23 02:11:24.808734
+    Span: 0 days
+  date_income_statement_bulk:
+    Range: 2016-04-02 00:00:00 to 2025-09-30 00:00:00
+    Span: 3,468 days
+  filingDate_income_statement_bulk:
+    Range: 2016-04-28 00:00:00 to 2025-10-22 00:00:00
+    Span: 3,464 days
+  acceptedDate_income_statement_bulk:
+    Range: 2016-04-28 06:03:01 to 2025-10-22 16:34:48
+    Span: 3,464 days
+  processed_at_income_statement_bulk:
+    Range: 2025-10-22 23:35:10.092429 to 2025-10-22 23:52:17.287210
+    Span: 0 days
+  date_income_statement_growth_bulk:
+    Range: 2016-04-02 00:00:00 to 2025-09-30 00:00:00
+    Span: 3,468 days
+  processed_at_income_statement_growth_bulk:
+    Range: 2025-10-23 00:27:09.345759 to 2025-10-23 00:27:21.872356
+    Span: 0 days
+  date_key_metrics:
+    Range: 2016-04-02 00:00:00 to 2025-09-30 00:00:00
+    Span: 3,468 days
+  processed_at_key_metrics:
+    Range: 2025-10-23 02:33:50.572157 to 2025-10-23 02:33:53.487671
+    Span: 0 days
+  date_financial_ratios:
+    Range: 2016-04-02 00:00:00 to 2025-09-30 00:00:00
+    Span: 3,468 days
+  processed_at_financial_ratios:
+    Range: 2025-10-23 02:35:26.233572 to 2025-10-23 02:45:00.228557
+    Span: 0 days
+
+🔢 NUMERIC COLUMNS: 343 columns
+  Columns with zeros: 337
+  Columns with negatives: 319
+
+================================================================================
+
+  ✓ No changes needed
+  ⏱️  Timing: Read 0.14s | Analysis 0.15s | Save 0.00s | Total 0.30s
+
+
+[2/15]
+
+================================================================================
+DATA QUALITY REPORT: fmp_market_performance.parquet
+================================================================================
+
+📊 BASIC INFO:
+  Shape: 49,196,422 rows × 21 columns
+  Memory: 7882.12 MB (estimated)
+  Duplicate rows: Skipped (dataset too large)
+
+❌ MISSING VALUES:
+  Overall missing rate: 0.00%
+  ✓ No missing values found
+
+📝 DATA TYPES:
+  object                12 columns
+  float64                4 columns
+  datetime64[us]         4 columns
+  datetime64[ns]         1 columns
+
+📅 DATE COLUMNS:
+  date:
+    Range: 2024-02-01 00:00:00 to 2024-03-01 00:00:00
+    Span: 29 days
+  processed_at:
+    Range: 2025-10-23 16:30:55.343585 to 2025-10-23 16:30:55.638936
+    Span: 0 days
+  processed_at_historical_industry_performance:
+    Range: 2025-10-23 16:34:54.343074 to 2025-10-23 16:34:54.570342
+    Span: 0 days
+  processed_at_historical_sector_pe:
+    Range: 2025-10-23 16:35:41.979390 to 2025-10-23 16:35:42.052059
+    Span: 0 days
+  processed_at_historical_sector_performance:
+    Range: 2025-10-23 16:36:04.710642 to 2025-10-23 16:36:04.772972
+    Span: 0 days
+
+🔢 NUMERIC COLUMNS: 4 columns
+  Columns with zeros: 2
+  Columns with negatives: 2
+
+================================================================================
+
+  ✓ No changes needed
+  ⏱️  Timing: Read 36.16s | Analysis 21.18s | Save 0.00s | Total 70.13s
+
+
+[3/15]
+
+================================================================================
+DATA QUALITY REPORT: datascope_yield_eod.parquet
+================================================================================
+
+📊 BASIC INFO:
+  Shape: 2,193,461 rows × 8 columns
+  Memory: 133.88 MB (estimated)
+  Duplicate rows: 0 (0.00%)
+
+❌ MISSING VALUES:
+  Overall missing rate: 5.77%
+  Columns with missing values: 6/8
+
+  Top columns by missing rate:
+    • High Yield                                280,273 ( 12.78%)
+    • Low Yield                                 279,786 ( 12.76%)
+    • Open Yield                                279,685 ( 12.75%)
+    • Bid Yield                                  76,101 (  3.47%)
+    • Ask Yield                                  62,186 (  2.84%)
+    • Close Yield                                34,222 (  1.56%)
+
+📝 DATA TYPES:
+  float64                6 columns
+  object                 1 columns
+  datetime64[ns]         1 columns
+
+📅 DATE COLUMNS:
+  Trade Date:
+    Range: 2002-01-31 00:00:00 to 2025-09-30 00:00:00
+    Span: 8,643 days
+
+🔢 NUMERIC COLUMNS: 6 columns
+  Columns with zeros: 3
+  Columns with negatives: 3
+
+================================================================================
+
+  ✓ No changes needed
+  ⏱️  Timing: Read 0.10s | Analysis 0.44s | Save 0.00s | Total 0.58s
+
+
+[4/15]
+
+================================================================================
+DATA QUALITY REPORT: fmp_enterprise_valuations_ratings.parquet
+================================================================================
+
+📊 BASIC INFO:
+  Shape: 1,344,078 rows × 41 columns
+  Memory: 420.43 MB (estimated)
+  Duplicate rows: 0 (0.00%)
+
+❌ MISSING VALUES:
+  Overall missing rate: 79.10%
+  Columns with missing values: 38/41
+
+  Top columns by missing rate:
+    • ownersEarningsPerShare                   1,329,899 ( 98.95%)
+    • reportedCurrency                         1,329,899 ( 98.95%)
+    • fiscalYear                               1,329,899 ( 98.95%)
+    • period                                   1,329,899 ( 98.95%)
+    • averagePPE                               1,329,899 ( 98.95%)
+    • maintenanceCapex                         1,329,899 ( 98.95%)
+    • asof_date_owner_earnings                 1,329,899 ( 98.95%)
+    • processed_at_owner_earnings              1,329,899 ( 98.95%)
+    • ownersEarnings                           1,329,899 ( 98.95%)
+    • growthCapex                              1,329,899 ( 98.95%)
+    ... and 28 more columns with missing values
+
+📝 DATA TYPES:
+  float64               24 columns
+  object                11 columns
+  datetime64[us]         5 columns
+  datetime64[ns]         1 columns
+
+📅 DATE COLUMNS:
+  date:
+    Range: 1985-08-31 00:00:00 to 2025-10-23 00:00:00
+    Span: 14,663 days
+  processed_at:
+    Range: 2025-10-23 02:57:01.500558 to 2025-10-23 02:57:02.310844
+    Span: 0 days
+  processed_at_historical_grades:
+    Range: 2025-10-23 16:27:43.635622 to 2025-10-23 16:27:44.358078
+    Span: 0 days
+  processed_at_historical_market_cap:
+    Range: 2025-10-23 17:26:28.758392 to 2025-10-23 17:26:31.129838
+    Span: 0 days
+  processed_at_historical_ratings:
+    Range: 2025-10-23 15:53:42.540947 to 2025-10-23 16:03:19.093802
+    Span: 0 days
+  processed_at_owner_earnings:
+    Range: 2025-10-23 17:36:00.917972 to 2025-10-23 17:36:01.736173
+    Span: 0 days
+
+🔢 NUMERIC COLUMNS: 24 columns
+  Columns with zeros: 12
+  Columns with negatives: 7
+
+================================================================================
+
+  ✓ No changes needed
+  ⏱️  Timing: Read 0.24s | Analysis 0.73s | Save 0.00s | Total 1.11s
+
+
+[5/15]
+
+================================================================================
+DATA QUALITY REPORT: datascope_price_eod.parquet
+================================================================================
+
+📊 BASIC INFO:
+  Shape: 2,193,461 rows × 13 columns
+  Memory: 217.55 MB (estimated)
+  Duplicate rows: 0 (0.00%)
+
+❌ MISSING VALUES:
+  Overall missing rate: 5.58%
+  Columns with missing values: 11/13
+
+  Top columns by missing rate:
+    • Ask High                                  296,959 ( 13.54%)
+    • Open Ask                                  296,189 ( 13.50%)
+    • Bid High                                  279,675 ( 12.75%)
+    • Open Bid                                  279,673 ( 12.75%)
+    • Low Bid                                   279,667 ( 12.75%)
+    • Average of Bid and Ask                     64,771 (  2.95%)
+    • Ask                                        22,252 (  1.01%)
+    • Bid                                        17,879 (  0.82%)
+    • Universal Close Price                      17,873 (  0.81%)
+    • Universal Ask Price                        17,870 (  0.81%)
+    ... and 1 more columns with missing values
+
+📝 DATA TYPES:
+  float64               11 columns
+  object                 1 columns
+  datetime64[ns]         1 columns
+
+📅 DATE COLUMNS:
+  Trade Date:
+    Range: 2002-01-31 00:00:00 to 2025-09-30 00:00:00
+    Span: 8,643 days
+
+🔢 NUMERIC COLUMNS: 11 columns
+  Columns with zeros: 5
+
+================================================================================
+
+  ✓ No changes needed
+  ⏱️  Timing: Read 0.13s | Analysis 0.85s | Save 0.00s | Total 1.02s
+
+
+[6/15]
+
+================================================================================
+DATA QUALITY REPORT: yieldbook_indicatives.parquet
+================================================================================
+
+📊 BASIC INFO:
+  Shape: 1,720 rows × 84 columns
+  Memory: 0.92 MB (estimated)
+  Duplicate rows: 0 (0.00%)
+
+❌ MISSING VALUES:
+  Overall missing rate: 1.32%
+  Columns with missing values: 6/84
+
+  Top columns by missing rate:
+    • indic.commonCode                            1,395 ( 81.10%)
+    • indic.issueSpread                             199 ( 11.57%)
+    • indic.issueYield                              194 ( 11.28%)
+    • indic.issuePrice                               90 (  5.23%)
+    • indic.makeWholeFlag                            20 (  1.16%)
+    • indic.cfi                                       2 (  0.12%)
+
+📝 DATA TYPES:
+  object                58 columns
+  bool                  17 columns
+  float64                8 columns
+  int64                  1 columns
+
+🔢 NUMERIC COLUMNS: 9 columns
+
+================================================================================
+
+  ✓ No changes needed
+  ⏱️  Timing: Read 0.01s | Analysis 0.01s | Save 0.00s | Total 0.03s
+
+
+[7/15]
+
+================================================================================
+DATA QUALITY REPORT: fmp_corp_actions.parquet
+================================================================================
+
+📊 BASIC INFO:
+  Shape: 69,922 rows × 24 columns
+  Memory: 12.80 MB (estimated)
+  Duplicate rows: 61 (0.09%)
+
+❌ MISSING VALUES:
+  Overall missing rate: 56.48%
+  Columns with missing values: 21/24
+
+  Top columns by missing rate:
+    • processed_at_stock_splits                  68,886 ( 98.52%)
+    • asof_date_stock_splits                     68,886 ( 98.52%)
+    • denominator                                68,886 ( 98.52%)
+    • numerator                                  68,886 ( 98.52%)
+    • split_ratio                                68,886 ( 98.52%)
+    • declarationDate                            43,967 ( 62.88%)
+    • paymentDate                                42,130 ( 60.25%)
+    • recordDate                                 42,129 ( 60.25%)
+    • revenueEstimated                           41,680 ( 59.61%)
+    • asof_date                                  39,237 ( 56.12%)
+    ... and 11 more columns with missing values
+
+📝 DATA TYPES:
+  float64               10 columns
+  object                 6 columns
+  datetime64[ns]         5 columns
+  datetime64[us]         3 columns
+
+📅 DATE COLUMNS:
+  date:
+    Range: 1962-10-31 00:00:00 to 2027-01-20 00:00:00
+    Span: 23,457 days
+  recordDate:
+    Range: 1983-04-15 00:00:00 to 2026-09-21 00:00:00
+    Span: 15,865 days
+  paymentDate:
+    Range: 1983-05-15 00:00:00 to 2026-10-06 00:00:00
+    Span: 15,850 days
+  declarationDate:
+    Range: 1983-03-26 00:00:00 to 2025-10-21 00:00:00
+    Span: 15,550 days
+  processed_at:
+    Range: 2025-10-23 16:41:12.907527 to 2025-10-23 16:41:13.962405
+    Span: 0 days
+  lastUpdated:
+    Range: 2023-12-04 00:00:00 to 2025-10-23 00:00:00
+    Span: 689 days
+  processed_at_earnings:
+    Range: 2025-10-23 16:44:48.805064 to 2025-10-23 16:44:49.701931
+    Span: 0 days
+  processed_at_stock_splits:
+    Range: 2025-10-23 16:48:09.132743 to 2025-10-23 16:48:09.608142
+    Span: 0 days
+
+🔢 NUMERIC COLUMNS: 10 columns
+  Columns with negatives: 4
+
+================================================================================
+
+  ✓ No changes needed
+  ⏱️  Timing: Read 0.01s | Analysis 0.03s | Save 0.00s | Total 0.05s
+
+
+[8/15]
+
+================================================================================
+DATA QUALITY REPORT: yieldbook_price_yield.parquet
+================================================================================
+
+📊 BASIC INFO:
+  Shape: 87,833 rows × 71 columns
+  Memory: 47.58 MB (estimated)
+  Duplicate rows: 167 (0.19%)
+
+❌ MISSING VALUES:
+  Overall missing rate: 0.55%
+  Columns with missing values: 68/71
+
+  Top columns by missing rate:
+    • BenchmarkToNextCall                        10,685 ( 12.17%)
+    • NextCallDate                               10,543 ( 12.00%)
+    • YieldToNextCall                            10,543 ( 12.00%)
+    • SpreadToRFRSwapCurve                        2,209 (  2.52%)
+    • AssetSwapSpread                                27 (  0.03%)
+    • Benchmark                                       7 (  0.01%)
+    • SpreadToBenchmark                               7 (  0.01%)
+    • DurationToWorstCase                             4 (  0.00%)
+    • FundedEffectiveDuration                         4 (  0.00%)
+    • EffectiveDurationPriceUp                        4 (  0.00%)
+    ... and 58 more columns with missing values
+
+📝 DATA TYPES:
+  float64               53 columns
+  object                18 columns
+
+🔢 NUMERIC COLUMNS: 53 columns
+  Columns with zeros: 7
+  Columns with negatives: 22
+
+================================================================================
+
+  ✓ No changes needed
+  ⏱️  Timing: Read 0.04s | Analysis 0.20s | Save 0.00s | Total 0.32s
+
+
+[9/15]
+
+================================================================================
+DATA QUALITY REPORT: datascope_metadata_eod_resampled_from_tick.parquet
+================================================================================
+
+📊 BASIC INFO:
+  Shape: 1,922,157 rows × 8 columns
+  Memory: 117.32 MB (estimated)
+  Duplicate rows: 926 (0.05%)
+
+❌ MISSING VALUES:
+  Overall missing rate: 20.46%
+  Columns with missing values: 4/8
+
+  Top columns by missing rate:
+    • Ex/Cntrb.ID                              1,122,054 ( 58.37%)
+    • Qualifiers                               1,017,236 ( 52.92%)
+    • Exch Time                                1,003,388 ( 52.20%)
+    • Date                                        3,121 (  0.16%)
+
+📝 DATA TYPES:
+  object                 5 columns
+  datetime64[us, UTC]    1 columns
+  int64                  1 columns
+  datetime64[ns]         1 columns
+
+📅 DATE COLUMNS:
+  Date-Time:
+    Range: 2018-01-01 00:00:00+00:00 to 2025-10-01 00:00:00+00:00
+    Span: 2,830 days
+  Date:
+    Range: 2017-11-27 00:00:00 to 2025-10-01 00:00:00
+    Span: 2,865 days
+
+🔢 NUMERIC COLUMNS: 1 columns
+  Columns with zeros: 1
+
+================================================================================
+
+  ✓ No changes needed
+  ⏱️  Timing: Read 0.10s | Analysis 0.44s | Save 0.00s | Total 0.67s
+
+
+[10/15]
+
+================================================================================
+DATA QUALITY REPORT: datascope_eod_resampled_from_tick_complete.parquet
+================================================================================
+
+📊 BASIC INFO:
+  Shape: 1,922,157 rows × 45 columns
+  Memory: 659.92 MB (estimated)
+  Duplicate rows: 17 (0.00%)
+
+❌ MISSING VALUES:
+  Overall missing rate: 46.84%
+  Columns with missing values: 41/45
+
+  Top columns by missing rate:
+    • Conversion Premium                       1,920,770 ( 99.93%)
+    • Old Value                                1,919,754 ( 99.87%)
+    • New Value                                1,919,412 ( 99.86%)
+    • Swap Point                               1,911,072 ( 99.42%)
+    • Percentage Daily Return                  1,797,074 ( 93.49%)
+    • Option Adjusted Spread Bid               1,660,256 ( 86.37%)
+    • Closest-to-Maturity CDS Basis            1,426,605 ( 74.22%)
+    • Interpolated CDS Basis                   1,393,467 ( 72.49%)
+    • Interpolated CDS Spread                  1,393,357 ( 72.49%)
+    • Premium                                  1,141,702 ( 59.40%)
+    ... and 31 more columns with missing values
+
+📝 DATA TYPES:
+  float64               37 columns
+  object                 6 columns
+  datetime64[us, UTC]    1 columns
+  int64                  1 columns
+
+📅 DATE COLUMNS:
+  Date-Time:
+    Range: 2018-01-01 00:00:00+00:00 to 2025-10-01 00:00:00+00:00
+    Span: 2,830 days
+
+🔢 NUMERIC COLUMNS: 38 columns
+  Columns with zeros: 11
+  Columns with negatives: 20
+
+================================================================================
+
+  ✓ No changes needed
+  ⏱️  Timing: Read 0.18s | Analysis 1.87s | Save 0.00s | Total 2.24s
+
+
+[11/15]
+
+================================================================================
+DATA QUALITY REPORT: datascope_risk_eod_resampled_from_tick.parquet
+================================================================================
+
+📊 BASIC INFO:
+  Shape: 1,922,157 rows × 14 columns
+  Memory: 205.31 MB (estimated)
+  Duplicate rows: 930 (0.05%)
+
+❌ MISSING VALUES:
+  Overall missing rate: 50.25%
+  Columns with missing values: 12/14
+
+  Top columns by missing rate:
+    • Premium                                  1,141,702 ( 59.40%)
+    • 6M Basis Asset Swap Spread               1,133,267 ( 58.96%)
+    • 3M Basis Asset Swap Spread               1,133,257 ( 58.96%)
+    • 1M Basis Asset Swap Spread               1,133,224 ( 58.96%)
+    • Swp Spd                                  1,125,029 ( 58.53%)
+    • Z Spread                                 1,122,214 ( 58.38%)
+    • Asst Swp Spd                             1,122,156 ( 58.38%)
+    • Bench Spd                                1,122,114 ( 58.38%)
+    • Duration                                 1,122,110 ( 58.38%)
+    • Mod Durtn                                1,122,110 ( 58.38%)
+    ... and 2 more columns with missing values
+
+📝 DATA TYPES:
+  float64               12 columns
+  object                 1 columns
+  datetime64[us, UTC]    1 columns
+
+📅 DATE COLUMNS:
+  Date-Time:
+    Range: 2018-01-01 00:00:00+00:00 to 2025-10-01 00:00:00+00:00
+    Span: 2,830 days
+
+🔢 NUMERIC COLUMNS: 12 columns
+  Columns with zeros: 4
+  Columns with negatives: 9
+
+================================================================================
+
+  ✓ No changes needed
+  ⏱️  Timing: Read 0.05s | Analysis 0.62s | Save 0.00s | Total 0.72s
+
+
+[12/15]
+
+================================================================================
+DATA QUALITY REPORT: datascope_price_eod_resampled_from_tick.parquet
+================================================================================
+
+📊 BASIC INFO:
+  Shape: 1,922,157 rows × 9 columns
+  Memory: 131.98 MB (estimated)
+  Duplicate rows: 83 (0.00%)
+
+❌ MISSING VALUES:
+  Overall missing rate: 12.46%
+  Columns with missing values: 7/9
+
+  Top columns by missing rate:
+    • Net Change                               1,133,167 ( 58.95%)
+    • Mid Price                                1,003,388 ( 52.20%)
+    • Open                                        4,001 (  0.21%)
+    • High                                        4,001 (  0.21%)
+    • Low                                         4,001 (  0.21%)
+    • Bid Price                                   3,121 (  0.16%)
+    • Ask Price                                   3,121 (  0.16%)
+
+📝 DATA TYPES:
+  float64                7 columns
+  object                 1 columns
+  datetime64[us, UTC]    1 columns
+
+📅 DATE COLUMNS:
+  Date-Time:
+    Range: 2018-01-01 00:00:00+00:00 to 2025-10-01 00:00:00+00:00
+    Span: 2,830 days
+
+🔢 NUMERIC COLUMNS: 7 columns
+  Columns with zeros: 1
+  Columns with negatives: 1
+
+================================================================================
+
+  ✓ No changes needed
+  ⏱️  Timing: Read 0.07s | Analysis 0.56s | Save 0.00s | Total 0.67s
+
+
+[13/15]
+
+================================================================================
+DATA QUALITY REPORT: datascope_yield_eod_resampled_from_tick.parquet
+================================================================================
+
+📊 BASIC INFO:
+  Shape: 1,922,157 rows × 10 columns
+  Memory: 146.65 MB (estimated)
+  Duplicate rows: 83 (0.00%)
+
+❌ MISSING VALUES:
+  Overall missing rate: 27.28%
+  Columns with missing values: 8/10
+
+  Top columns by missing rate:
+    • ISMA Bid Yld                             1,122,110 ( 58.38%)
+    • ISMA Ask Yld                             1,122,110 ( 58.38%)
+    • Mid Yield                                1,003,388 ( 52.20%)
+    • Bid Yld                                   992,284 ( 51.62%)
+    • Ask Yld                                   992,284 ( 51.62%)
+    • Open Yld                                    4,001 (  0.21%)
+    • High Yld                                    4,001 (  0.21%)
+    • Low Yld                                     4,001 (  0.21%)
+
+📝 DATA TYPES:
+  float64                8 columns
+  object                 1 columns
+  datetime64[us, UTC]    1 columns
+
+📅 DATE COLUMNS:
+  Date-Time:
+    Range: 2018-01-01 00:00:00+00:00 to 2025-10-01 00:00:00+00:00
+    Span: 2,830 days
+
+🔢 NUMERIC COLUMNS: 8 columns
+  Columns with negatives: 5
+
+================================================================================
+
+  ✓ No changes needed
+  ⏱️  Timing: Read 0.05s | Analysis 0.39s | Save 0.00s | Total 0.48s
+
+
+[14/15]
+
+================================================================================
+DATA QUALITY REPORT: datascope_characteristic_eod.parquet
+================================================================================
+
+📊 BASIC INFO:
+  Shape: 2,193,461 rows × 26 columns
+  Memory: 435.10 MB (estimated)
+  Duplicate rows: 0 (0.00%)
+
+❌ MISSING VALUES:
+  Overall missing rate: 0.00%
+  Columns with missing values: 1/26
+
+  Top columns by missing rate:
+    • ESMA Standard Market Size Currency Code     1,188 (  0.05%)
+
+📝 DATA TYPES:
+  object                22 columns
+  float64                3 columns
+  datetime64[ns]         1 columns
+
+📅 DATE COLUMNS:
+  Trade Date:
+    Range: 2002-01-31 00:00:00 to 2025-09-30 00:00:00
+    Span: 8,643 days
+
+🔢 NUMERIC COLUMNS: 3 columns
+
+================================================================================
+
+  ✓ No changes needed
+  ⏱️  Timing: Read 0.46s | Analysis 2.22s | Save 0.00s | Total 3.52s
+
+
+[15/15]
+
+================================================================================
+DATA QUALITY REPORT: norgate_eod_stock_prices.parquet
+================================================================================
+
+📊 BASIC INFO:
+  Shape: 2,906,856 rows × 10 columns
+  Memory: 243.95 MB (estimated)
+  Duplicate rows: 0 (0.00%)
+
+❌ MISSING VALUES:
+  Overall missing rate: 0.00%
+  ✓ No missing values found
+
+📝 DATA TYPES:
+  float64                7 columns
+  object                 3 columns
+
+🔢 NUMERIC COLUMNS: 7 columns
+
+================================================================================
+
+  ✓ No changes needed
+  ⏱️  Timing: Read 0.14s | Analysis 1.51s | Save 0.00s | Total 1.81s
+
+
+================================================================================
+✓ COMPLETED: Analyzed and cleaned 15 files
+⏱️  Total time: 86.11s (1.44 minutes)
+⏱️  Average per file: 5.58s
+================================================================================
